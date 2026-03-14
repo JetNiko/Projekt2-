@@ -1,0 +1,38 @@
+1. Moduł Autoryzacji i Zarządzania Dostępem
+Logowanie: Uwierzytelnianie użytkowników za pomocą nazwy użytkownika i hasła.
+Ochrona sesji: Zabezpieczenie dostępu do aplikacji i API za pomocą tokenów JWT (JSON Web Tokens).
+Zarządzanie rolami: Obsługa ról użytkowników (Admin, Director, Guard, Medical, Administrative) z systemem uprawnień.
+2. Panel Główny (Dashboard)
+Statystyki w czasie rzeczywistym: Wyświetlanie kluczowych danych liczbowych (całkowita liczba osadzonych, liczba aktywnego personelu na zmianie, incydenty z ostatnich 24h, procentowa zajętość cel).
+Podgląd incydentów: Wyświetlanie listy najnowszych incydentów bezpośrednio na ekranie głównym.
+Tablica ogłoszeń: Wyświetlanie ogłoszeń systemowych i komunikatów (np. nowe procedury, alarmy).
+3. Zarządzanie Osadzonymi (Inmates)
+Lista osadzonych: Przeglądanie tabeli wszystkich więźniów z podstawowymi danymi (imię, nazwisko, numer, przypisana cela, poziom bezpieczeństwa).
+Wyszukiwanie i filtrowanie: Możliwość wyszukiwania osadzonych.
+Dodawanie osadzonych: Rejestracja nowego więźnia w systemie (dane osobowe, wyrok, przydział do celi, cechy fizyczne).
+Profil osadzonego: Wyświetlanie szczegółowej karty więźnia, zawierającej:
+Dane osobowe i fizyczne (wzrost, waga, kolor oczu, obywatelstwo).
+Szczegóły wyroku (rodzaj przestępstwa, czas trwania, daty).
+Historię zachowania (nagrody, kary, raporty).
+Historię medyczną (diagnozy, leczenie, przypisane leki).
+Edycja i usuwanie: Możliwość aktualizacji danych więźnia oraz jego usunięcia z systemu.
+Dane biometryczne: Możliwość aktualizacji zdjęcia (photo_url) oraz odcisku palca (fingerprint_url) osadzonego.
+4. Zarządzanie Personelem (Staff)
+Lista pracowników: Przeglądanie tabeli personelu (imię, nazwisko, rola, numer odznaki, departament).
+Dodawanie pracowników: Rejestracja nowego pracownika (z automatycznym przypisaniem roli i hasła).
+Edycja i usuwanie: Możliwość aktualizacji danych pracownika oraz jego usunięcia z systemu.
+5. Zarządzanie Bezpieczeństwem i Incydentami (Incidents)
+Rejestr incydentów: Przeglądanie historii zdarzeń (data, lokalizacja, opis, poziom zagrożenia: niski/średni/wysoki/krytyczny, kategoria: np. bójka, przemyt).
+Zgłaszanie incydentów: Formularz pozwalający na dodanie nowego incydentu do systemu.
+6. Zarządzanie Infrastrukturą (Cells & Wards)
+Przegląd oddziałów i cel: Wyświetlanie listy oddziałów (Wards) oraz przypisanych do nich cel (Cells).
+Monitorowanie pojemności: Śledzenie pojemności poszczególnych cel oraz ich statusu (np. aktywna, zablokowana).
+7. Zarządzanie Widzeniami (Visits)
+Rejestr widzeń: Przeglądanie zaplanowanych i zrealizowanych widzeń dla osadzonych.
+Planowanie widzeń: Rejestrowanie nowego widzenia (dane odwiedzającego, relacja, data, godzina, status weryfikacji).
+8. Zarządzanie Grafikami (Schedules)
+Podgląd zmian: Przeglądanie grafików dyżurów personelu (początek zmiany, koniec zmiany, typ: regularna, nadgodziny, pod telefonem).
+Planowanie dyżurów: Dodawanie nowych zmian dla pracowników.
+9. Komunikacja i Raportowanie (Communication & Reports)
+Wiadomości wewnętrzne: Przeglądanie i wysyłanie wiadomości między pracownikami systemu.
+Raporty służbowe: Przeglądanie i tworzenie raportów (np. raporty dzienne, raporty z incydentów).
